@@ -17,7 +17,7 @@ public class BaseClass {
     public static void excel_reader() throws Exception {
         String line = "";
         String splitBy = ",";
-        BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\tejasmas\\Desktop\\login_credentials.csv"));
+        BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\tejasmas\\Desktop\\hu_selenium_track\\hu_selenium_track\\Mini Assignment 4_5\\login_credentials.csv"));
         while ((line = br.readLine()) != null)
         {
             String[] login = line.split(splitBy);
@@ -27,7 +27,7 @@ public class BaseClass {
             SampleRunTest.verify_login(username,password);
 //            break;
         }
-        BufferedReader br2 = new BufferedReader(new FileReader("C:\\Users\\tejasmas\\Desktop\\booking_details.csv"));
+        BufferedReader br2 = new BufferedReader(new FileReader("C:\\Users\\tejasmas\\Desktop\\hu_selenium_track\\hu_selenium_track\\Mini Assignment 4_5\\booking_details.csv"));
         while ((line = br2.readLine()) != null)
         {
             String[] cust = line.split(splitBy);
